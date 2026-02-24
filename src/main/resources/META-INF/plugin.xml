@@ -9,7 +9,48 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.nadiatarashkevich.settingpageaction.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.nadiatarashkevich.settingpageaction.startup.MyProjectActivity" />
     </extensions>
+
+    <actions>
+        <action id="OpenAppearanceSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenAppearanceSettingsAction"
+                text="Open Appearance Settings" description="Opens the Appearance &amp; Behavior settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenKeymapSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenKeymapSettingsAction"
+                text="Open Keymap Settings" description="Opens the Keymap settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenEditorSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenEditorSettingsAction"
+                text="Open Editor Settings" description="Opens the Editor settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenPluginsSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenPluginsSettingsAction"
+                text="Open Plugins Settings" description="Opens the Plugins settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenVersionControlSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenVersionControlSettingsAction"
+                text="Open Version Control Settings" description="Opens the Version Control settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenBuildSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenBuildSettingsAction"
+                text="Open Build Settings" description="Opens the Build, Execution, Deployment settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenLanguagesSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenLanguagesSettingsAction"
+                text="Open Languages &amp; Frameworks Settings" description="Opens the Languages &amp; Frameworks settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenToolsSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenToolsSettingsAction"
+                text="Open Tools Settings" description="Opens the Tools settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenExternalToolsSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenExternalToolsSettingsAction"
+                text="Open External Tools Settings" description="Opens the External Tools settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+        <action id="OpenLiveTemplatesSettings" class="com.github.nadiatarashkevich.settingpageaction.actions.OpenLiveTemplatesSettingsAction"
+                text="Open Live Templates Settings" description="Opens the Live Templates settings page">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
